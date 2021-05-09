@@ -1,0 +1,33 @@
+{
+  "name": "platziverse-mqtt",
+  "version": "1.0.0",
+  "description": "A simple proyect IOT",
+  "main": "server.js",
+  "scripts": {    
+    "start-dev": "SET DEBUG=platziverse:* && nodemon server.js",
+    "lint": "standard",
+    "start": "NODE_ENV=production node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/emersonpalacio/platziverse.git"               
+  },
+  "author": "Emerson-palacio-otalvaro",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/emersonpalacio/platziverse/issues"
+  },
+  "homepage": "https://github.com/emersonpalacio/platziverse#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.7",
+    "standard": "^16.0.3"
+  },
+  "dependencies": {
+    "aedes": "^0.46.0",
+    "aedes-persistence-redis": "^8.0.1",
+    "chalk": "^4.1.1",
+    "debug": "^4.3.1",
+    "mqemitter-redis": "^4.1.0",
+    "redis": "^3.1.2"
+  }
+}
